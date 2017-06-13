@@ -25,6 +25,8 @@ Vector tiles have two important advantages over fully rendered image tiles:
 
 As the name suggests, vector tiles contain vector data instead of the rendered image. They contain geometries and metadata – like road names, place names, house numbers – in a compact, structured format. Vector tiles are rendered only when requested by a client, like a web browser or a mobile app. Rendering happens either in the client (Mapbox GL JS, Mapbox iOS SDK, Mapbox Android SDK) or on the fly on the server (map API). 
 
+**More info**
+
 https://www.mapbox.com/vector-tiles/
 https://www.mapbox.com/vector-tiles/specification/
 
@@ -33,17 +35,31 @@ https://www.mapbox.com/vector-tiles/specification/
 Mapbox have defined an open standard for vector map tiles called "vector-tile-spec" which uses Google protocol buffers for space-efficient data serialisation. Web Mercator is the projection of reference, but vector tiles may be used to represent data with any projection and tile extent scheme. It is also tied to the Mapnik rendering engine, using a "serialized version of the internal data that Mapnik uses".
 
 
+# The workshop
+
+
+The full workshop is in the wiki. Take me [< THERE! >](https://github.com/maptime-ams/vector-tiles-workshop/wiki)
+
+A really short outline:
+
 ## Getting the code. 
 
 1. Download this repository on you own device.
 2. Open the index.html
 3. See your map!
+4. Style your map!
 
 ## Maputnik
 Maputnik is a free visual style editor for maps targeted at developers and designers. It allows you to pull in data sources and style the vector features with the visual editor to build your own custom map design! 
 
 1. Goto http://maputnik.com/editor/
-2. style! 
+2. Style your map!
+
+## Optional
+
+1. Get TippeCanoe.
+2. Convert your own geoJSON data to vector tiles.
+3. Set up local server.
+4. Style you own map!  
 
 
-Take me to the full workshop ! [< CLICK HERE >]()
