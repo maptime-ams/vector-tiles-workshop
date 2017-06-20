@@ -53,68 +53,116 @@
 						<li>Vector tiles and what they look like</li>
 					</ul>
 				</section>
-				<section>
-				<h6>What is a Web Map?</h6>
+				<section >
 					<section>
 					<h2> What is a web map?</h2>
-					Data, tiles, styles and servers. 
-					Web map vs digital maps vs analogue maps
-					View in a browser, scroll, pan, zoom. 
+
+					<p> Analogue paper maps vs Digital maps </p>
+
+					<p> Digital maps vs Web Maps</p>
+
+					<p>Data, tiles, styles and servers. </p>
+					
+					<p> View in a browser, scroll, pan, zoom. </p>
+
+					<p> Examples:</p>
+					</section>
+					<section data-background="img/osm.png">
+						<h2>openstreetmap.org</h2>
+					</section>
+					<section data-background="img/google.png">
+						<h2>google.com/maps</h2>
 					</section>
 					<section>
-						<h2>History</h2>
-						How to provide this in a fast way? tiles!
+						<h2>a little History</h2>
+						<p>GIS software</p>
+						<p>GIS on the Web is not user friendly.. </p>
+						<p> 1996 Mapquest first with a web service! </p>
 					</section>
 					<section>
+						<p>But really slow to load..</p>
+						<p> 2005 Goolge Maps found a way for quick online mapping! </p>
+						<h2> Tiles! </h2>
+					</section>
+					<section data-background="http://maptime.io/anatomy-of-a-web-map/images/tiles-loading.gif">
 					<h2>Tiles</h2>
-					Tiles 256x256 pixels, same grid, same boundaries. 
-					All little tiles load way faster than one big map! Slippy maps.
+					<p> All tiles 256x256 pixels </p>
+					<p> same grid, same boundaries </p>
+					<h2> All these little tiles load way faster than one big map!</h2>
+					<p> we call those slippy maps</p>
 					</section>
-					<section>
+					<section data-background="http://www.truenorthgeospatial.com/wp-content/uploads/2015/10/training-tiling.png" data-background-size='60%' >
 						<h2>Zoom levels</h2>
-					Each zoom level has its own set of tiles!
-					Zoom level 0: 1 tile for the whole world.
-					Increases exponentially...
-					Zoom level 1: 4 tiles
-					Zoom level 2: 16 tiles
+					<p>Each zoom level has its own set of tiles!</p>
+					<p>Zoom level 0: 1 tile for the whole world.</p>
+					<p>Increases exponentially...</p>
+					<p>Zoom level 1: 4 tiles</p>
+					<p>Zoom level 2: 16 tiles</p>
 					etc.
+					How does this look like : http://www.maptiler.org/google-maps-coordinates-tile-bounds-projection/
 					</section>
 					<section>
 						<h2>Serving tiles</h2>
-					Tiles rendered in advance. 
-					Stored in a cache. 
-					Tiles are just images. 
+					<p>Tiles rendered in advance. </p>
+					<p>Stored in a cache. </p>
+					<p>Tiles are just images. </p>
 					</section>
-				</section>	
+					<section>
+						<p>Tiles are just images on the web</p>
+						<p>http://tile.openstreetmap.org/5/16/10.png</p>
+						<p>z/x/y</p>
+					</section>
+				</section>
 				<section>
 				<h6>Raster vs Vector</h6>
+
+					<section data-background="http://maptime.io/anatomy-of-a-web-map/images/anatomy-of-a-web-map.png" data-background-size='50%'></section>
+
+					<section data-background="http://mapschool.io/img/raster.png" data-background-size='60%'> </section>
+					<section data-background="http://mapschool.io/img/vector_types.png" data-background-size='60%'></section>
 					<section>
-						<h2>From raster to vector</h2>
-					</section>
-					<section>
-					<h2>Advantages</h2>
-					Styling on client side
-					small
-					fast
-					</section>
+						<h2>Advantages</h2>
+						<p> Rendering is done on client side not by the server!</p>
+						<p> So different applications can style a map different!</p>
+						<p> Small tile size! So faster data transfer. </p>
+						<p> High resolution! </p>
+						<p> Access to feature information!</p>
+						</section>
 					<section>
 					<h2>Who What Where?</h2>
-					Google 
-					Mapbox
-					OSM
-					etc. 
+					<ul>
+						<li>Google </li>
+						<li>Mapbox</li>
+						<li>OSM</li>
+						<li>Apple</li>
+					</ul>
 					</section>
 				</section>
 				<section>
 				<h6>Vector tiles and what they look like.</h6> 
 					<section>
+						<p> No colors</p>
+						<p> Arrays in a 256 x 256 matrix</p>
+						<p> Same tiling schema as Raster png tiles.</p>
+						<p> Binary format</p>
+						<p> Simplifies geometries</p>
+					</section>
+					<section>
 						<h2> How does it work?</h2>
-						Mapbox Standard. pbf based on Google standard. Used by Esri.
+
+						Mapbox Vector Tile Standard. 
+						Based on the binary protocal buffer (.pbf) from Google. 
+
+						Standard already used by Esri.
+
+						github.com/mapbox/vector-tile-spec
+
 						GeoJSON
 						mbtiles
 						.pbf
 						Data and Properties. 
 					</section>
+					
 					<section>
 						<h2>How to get them?</h2>
 						free serving
