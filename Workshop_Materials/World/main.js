@@ -1,11 +1,10 @@
-
 var style_object = {
 	"version": 8,
 	"name": "openmaptiles_kaart",
 	"sources": {
 		"openmaptiles": {
 			"type": "vector",
-			"url": "https://free.tilehosting.com/data/v3.json?key={xujVUrQDmYaXkigsoQ0y}"
+			"url": "https://free.tilehosting.com/data/v3.json?key={yourKey}"
 		} 
 	},
 	"layers": [
@@ -1037,7 +1036,7 @@ var style_object = {
  };
 
 
-//Initialzie Map
+//Initialize Map
 
 var map = new mapboxgl.Map({
     container: "map",
