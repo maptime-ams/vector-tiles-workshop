@@ -1037,7 +1037,7 @@ var style_object = {
  };
 
 
-//Initialzie Map
+//Initialize Map
 
 var map = new mapboxgl.Map({
     container: "map",

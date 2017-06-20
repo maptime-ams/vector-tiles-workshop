@@ -1,14 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset='utf-8' />
-	<title>Vector-Tile Viewer</title>
-	<script src='https://api.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
-	<link rel="stylesheet" href="main.css">
-	<link href='https://api.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
-</head>
-<body>
-	<div id="map"></div>
-	<script src="main.js"></script>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="img/maptimeAMS.png" data-background-size='60%'> 
+				</section>
+				<section data-state='openingslide'>
+					<h1>Maptime Amsterdam #15</h1>
+					<h2>Vector Tile workshop </h2>
+					<h2>By Niene Boeijen</h2>
+				</section>
+				<section>
+					<h2>WIFI: WaagGuest</h2>
+					<h2>PW: guest@waag </h2>
+				</section>
+				<section> 
+					<p>This presentation</p>
+					<a href="https://maptime-ams.github.io/vector-tiles-workshop/#/">https://maptime-ams.github.io/vector-tiles-workshop/</a>
+					<p>The workshop:</p>
+					<a href="https://github.com/maptime-ams/vector-tiles-workshop/wiki">https://github.com/maptime-ams/vector-tiles-workshop/wiki</a>
+					<p>The materials needed:</p> 
+					<a href="https://github.com/maptime-ams/vector-tiles-workshop">https://github.com/maptime-ams/vector-tiles-workshop</a>
+				</section>
+				<section>
+					<h3>Short outline: </h3>
+					<ol>
+						<li><h2>Presentation. </h2></li>
+						<li><h2>Workshop! </h2></li>
+					    <li><h2>Show and tell! </h2></li>
+					</ol>
+				</section>
+				<section>
+					<h1>Vector tiles!</h1>
+					<h3>Let's start from the beginning</h3>
+					<ul>
+						<li>What is a Web map?</li>
+						<li>Raster vs Vector</li>
+						<li>Vector tiles and what they look like</li>
+					</ul>
+				</section>
+				<section>
+				<h6>What is a Web Map?</h6>
+					<section>
+					<h2> What is a web map?</h2>
+					Data, tiles, styles and servers. 
+					Web map vs digital maps vs analogue maps
+					View in a browser, scroll, pan, zoom. 
+					</section>
+					<section>
+						<h2>History</h2>
+						How to provide this in a fast way? tiles!
+					</section>
+					<section>
+					<h2>Tiles</h2>
+					Tiles 256x256 pixels, same grid, same boundaries. 
+					All little tiles load way faster than one big map! Slippy maps.
+					</section>
+					<section>
+						<h2>Zoom levels</h2>
+					Each zoom level has its own set of tiles!
+					Zoom level 0: 1 tile for the whole world.
+					Increases exponentially...
+					Zoom level 1: 4 tiles
+					Zoom level 2: 16 tiles
+					etc.
+					</section>
+					<section>
+						<h2>Serving tiles</h2>
+					Tiles rendered in advance. 
+					Stored in a cache. 
+					Tiles are just images. 
+					</section>
+				</section>	
+				<section>
+				<h6>Raster vs Vector</h6>
+					<section>
+						<h2>From raster to vector</h2>
+					</section>
+					<section>
+					<h2>Advantages</h2>
+					Styling on client side
+					small
+					fast
+					</section>
+					<section>
+					<h2>Who What Where?</h2>
+					Google 
+					Mapbox
+					OSM
+					etc. 
+					</section>
+				</section>
+				<section>
+				<h6>Vector tiles and what they look like.</h6> 
+					<section>
+						<h2> How does it work?</h2>
+						Mapbox Standard. pbf based on Google standard. Used by Esri.
+						GeoJSON
+						mbtiles
+						.pbf
+						Data and Properties. 
+					</section>
+					<section>
+						<h2>How to get them?</h2>
+						free serving
+						making them (TippeCanoe)
+						Amsterdam Datalab.
+						Soon PDOK/Kadaster?...BRT of the Netherlands! 
+					</section>
+					<section>
+						<h2>How to visualize them?</h2>	
+						OpenLayers
+						Leaflet
+						MapboxGL
+						Google
+					</section>
+				</section>
+				<section>
+					<h3> Let's get started!</h3>
+					<p>The workshop:</p>
+					<a href="https://github.com/maptime-ams/vector-tiles-workshop/wiki">https://github.com/maptime-ams/vector-tiles-workshop/wiki</a>
+					<p>The materials needed:</p> 
+					<a href="https://github.com/maptime-ams/vector-tiles-workshop">https://github.com/maptime-ams/vector-tiles-workshop</a>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
 </html>
