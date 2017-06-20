@@ -1,0 +1,364 @@
+layer = water 
+	from bgt
+	data waterdeel_vlak0
+	
+layer = terrein0 
+	from bgt
+	data terreindeel_vlak0
+	
+layer = overbruggingsdeel 
+	from bgt
+	data BGT_ODL_overbruggingsdeel
+	
+layer = wegdeel_vlak0 
+	from bgt
+	data wegdeel_vlak0
+	
+layer = inrichtingselement_vlak0 
+	from bgt
+	data inrichtingselement_vlak0
+	
+layer = gebouwen0 
+	from bgt
+	data gebouw_vlak0
+	
+layer = wegdeel_vlak_1 
+	from bgt
+	data wegdeel_vlak_1
+	
+layer = terrein1 
+	from bgt
+	data terreindeel_vlak1
+	
+layer = wegdeel_vlak1 
+	from bgt
+	data wegdeel_vlak1
+	
+layer = inrichtingselement_vlak1 
+	from bgt
+	data inrichtingselement_vlak1
+	
+layer = gebouwen1 
+	from bgt
+	data gebouw_vlak1
+	
+layer = terrein2 
+	from bgt
+	data terreindeel_vlak2
+	
+layer = wegdeel_vlak2 
+	from bgt
+	data wegdeel_vlak2
+	
+layer = inrichtingselement_vlak2 
+	from bgt
+	data inrichtingselement_vlak2
+	
+layer = gebouwen2 
+	from bgt
+	data gebouw_vlak2
+	
+layer = terrein3 
+	from bgt
+	data terreindeel_vlak3
+	
+layer = wegdeel_vlak3 
+	from bgt
+	data wegdeel_vlak3
+	
+layer = gebouwen3 
+	from bgt
+	data gebouw_vlak3
+	
+layer = terrein4 
+	from bgt
+	data terreindeel_vlak4
+	
+layer = gebouwen4 
+	from bgt
+	data gebouw_vlak4
+	
+layer = spoor_lijn_2 
+	from bgt
+	data spoor_lijn_2
+	
+layer = spoor_lijn_1 
+	from bgt
+	data spoor_lijn_1
+	
+layer = spoor_lijn0 
+	from bgt
+	data spoor_lijn0
+	
+layer = spoor_lijn1 
+	from bgt
+	data spoor_lijn1
+	
+layer = spoor_lijn2 
+	from bgt
+	data spoor_lijn
+	
+layer = water 
+	from kbk10
+	data WDL_breed_water
+	
+layer = haven 
+	from kbk10
+	data WDL_haven
+	
+layer = terein_aanlegsteiger 
+	from kbk10
+	data TRN_aanlegsteiger
+	
+layer = terein_basaltblokken_steenglooiing 
+	from kbk10
+	data TRN_basaltblokken_steenglooiing
+	
+layer = terein_grasland 
+	from kbk10
+	data TRN_grasland
+	
+layer = terein_akkerland 
+	from kbk10
+	data TRN_akkerland
+	
+layer = terein_overig 
+	from kbk10
+	data TRN_overig
+	
+layer = terein_bedrijfsterrein 
+	from kbk10
+	data TRN_bedrijfsterrein
+	
+layer = terein_openbaar_groen 
+	from kbk10
+	data TRN_openbaar_groen
+	
+layer = terein_zand 
+	from kbk10
+	data TRN_zand
+	
+layer = startbaan_landingsbaan 
+	from kbk10
+	data WGL_startbaan_landingsbaan
+	
+layer = terein_spoorbaanlichaam 
+	from kbk10
+	data TRN_spoorbaanlichaam
+	
+layer = terein_bos-loofbos 
+	from kbk10
+	data TRN_bos-loofbos
+	
+layer = terein_bos-naaldbos 
+	from kbk10
+	data TRN_bos-naaldbos
+	
+layer = terein_bos-gemengd_bos 
+	from kbk10
+	data TRN_bos-gemengd_bos
+	
+layer = terein_bos-griend 
+	from kbk10
+	data TRN_bos-griend
+	
+layer = terein_boomgaard 
+	from kbk10
+	data TRN_boomgaard
+	
+layer = terein_boomkwekerij 
+	from kbk10
+	data TRN_boomkwekerij
+	
+layer = terein_dodenakker 
+	from kbk10
+	data TRN_dodenakker
+	
+layer = terein_dodenakker_met_bos 
+	from kbk10
+	data TRN_dodenakker_met_bos
+	
+layer = terein_fruitkwekerij 
+	from kbk10
+	data TRN_fruitkwekerij
+	
+layer = gebouwen_overdekt 
+	from kbk10
+	data GBW_overdekt
+	
+layer = gebouwen 
+	from kbk10
+	data GBW_gebouw
+	
+layer = gebouwen_hoogbouw 
+	from kbk10
+	data GBW_hoogbouw
+	
+layer = gebouwen_kassen 
+	from kbk10
+	data GBW_kas_warenhuis
+	
+layer = terein_binnentuin 
+	from kbk10
+	data TRN_binnentuin
+	
+layer = waterbassin 
+	from kbk10
+	data WDL_waterbassin
+	
+layer = water_breed 
+	from kbk10
+	data WDL_smal_water_3_tot_6m
+	
+layer = water_smal 
+	from kbk10
+	data WDL_smal_water_tot_3m
+	
+layer = tunnelcontour 
+	from kbk10
+	data KRT_tunnelcontour
+	
+layer = aanlegsteiger_smal 
+	from kbk10
+	data IRT_aanlegsteiger_smal
+	
+layer = weg_smalle_weg 
+	from kbk10
+	data WGL_smalle_weg
+	
+layer = SBL_metro_in_tunnel 
+	from kbk10
+	data SBL_metro_overdekt
+	
+layer = SBL_tram_in_tunnel 
+	from kbk10
+	data SBL_tram_overdekt
+	
+layer = SBL_trein_in_tunnel 
+	from kbk10
+	data SBL_trein_overdekt_1sp
+	
+layer = SBL_trein_in_tunnel 
+	from kbk10
+	data SBL_trein_overdekt_nsp
+	
+layer = SBL_metro 
+	from kbk10
+	data SBL_metro_nietoverdekt_1sp
+	
+layer = SBL_metro 
+	from kbk10
+	data SBL_metro_nietoverdekt_nsp
+	
+layer = SBL_tram 
+	from kbk10
+	data SBL_tram_nietoverdekt
+	
+layer = SBL_trein 
+	from kbk10
+	data SBL_trein_ongeelektrificeerd
+	
+layer = SBL_trein 
+	from kbk10
+	data SBL_trein_nietoverdekt_1sp
+	
+layer = SBL_trein 
+	from kbk10
+	data SBL_trein_nietoverdekt_nsp
+	
+layer = weg_hartlijn 
+	from kbk10
+	data WGL_hartlij
+	
+layer = water 
+	from kbk50
+	data WDL_wateroppervlak
+	
+layer = terein_agrarisch 
+	from kbk50
+	data TRN_agrarisch
+	
+layer = terein_overig 
+	from kbk50
+	data TRN_overig
+	
+layer = terein_zand 
+	from kbk50
+	data TRN_zand
+	
+layer = gebouwen 
+	from kbk50
+	data GBW_bebouwing
+	
+layer = terein_bedrijfsterrein 
+	from kbk50
+	data TRN_bedrijfsterrein_dienstverlening
+	
+layer = gebouwen_kassen 
+	from kbk50
+	data GBW_kassen
+	
+layer = terein_bos_groen_sport 
+	from kbk50
+	data TRN_bos_groen_sport
+	
+layer = water_breed 
+	from kbk50
+	data WDL_brede_waterloop
+	
+layer = water_smal 
+	from kbk50
+	data WDL_smalle_waterloop
+	
+layer = weg_straat_in_tunnel 
+	from kbk50
+	data WGL_straat_in_tunnel
+	
+layer = weg_hoofdweg_in_tunnel 
+	from kbk50
+	data WGL_hoofdweg_in_tunnel
+	
+layer = weg_regionale_weg_in_tunnel 
+	from kbk50
+	data WGL_regionale_weg_in_tunnel
+	
+layer = weg_autosnelweg_in_tunnel 
+	from kbk50
+	data WGL_autosnelweg_in_tunnel
+	
+layer = weg_straat 
+	from kbk50
+	data WGL_straat
+	
+layer = weg_hoofdweg 
+	from kbk50
+	data WGL_hoofdweg
+	
+layer = weg_regionale_weg 
+	from kbk50
+	data WGL_regionale_weg
+	
+layer = SBL_metro_in_tunnel 
+	from kbk50
+	data SBL_metro_sneltram_in_tunnel
+	
+layer = SBL_trein_in_tunnel 
+	from kbk50
+	data SBL_trein_in_tunnel
+	
+layer = SBL_metro 
+	from kbk50
+	data SBL_metro_sneltram
+	
+layer = SBL_trein 
+	from kbk50
+	data SBL_trein_ongeelektrificeerd
+	
+layer = SBL_trein 
+	from kbk50
+	data SBL_trein
+	
+layer = weg_autosnelweg 
+	from kbk50
+	data WGL_autosnelweg.
+	

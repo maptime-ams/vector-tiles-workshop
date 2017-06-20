@@ -19,7 +19,7 @@
 			<div class="slides">
 				<section data-background="img/maptimeAMS.png" data-background-size='60%'> 
 				</section>
-				<section data-state='openingslide'>
+				<section data-state='openingslide' data-background="https://www.mapbox.com/help/img/screenshots/dynamic-ny-details.gif">
 					<h1>Maptime Amsterdam #15</h1>
 					<h2>Vector Tile workshop </h2>
 					<h2>By Niene Boeijen</h2>
@@ -81,7 +81,8 @@
 					</section>
 					<section>
 						<p>But really slow to load..</p>
-						<p> 2005 Goolge Maps found a way for quick online mapping! </p>
+						<p> 2004 Endoxon: <a href="http://map.search.ch">map.search.ch</a></p>
+						<p> 2005 Google Maps found a way for quick online mapping! </p>
 						<h2> Tiles! </h2>
 					</section>
 					<section data-background="http://maptime.io/anatomy-of-a-web-map/images/tiles-loading.gif">
@@ -115,11 +116,10 @@
 				</section>
 				<section>
 				<h6>Raster vs Vector</h6>
-
 					<section data-background="http://maptime.io/anatomy-of-a-web-map/images/anatomy-of-a-web-map.png" data-background-size='50%'></section>
-
 					<section data-background="http://mapschool.io/img/raster.png" data-background-size='60%'> </section>
 					<section data-background="http://mapschool.io/img/vector_types.png" data-background-size='60%'></section>
+					<section data-background="http://www.emu-analytics.com/perch/resources/map-tiles-2-w800.png" data-background-size='60%'></section>
 					<section>
 						<h2>Advantages</h2>
 						<p> Rendering is done on client side not by the server!</p>
@@ -140,7 +140,7 @@
 				</section>
 				<section>
 				<h6>Vector tiles and what they look like.</h6> 
-					<section>
+					<section data-background="https://mapzen.com/resources/projects/vector-tiles/square-of-math.gif" >
 						<p> No colors</p>
 						<p> Arrays in a 256 x 256 matrix</p>
 						<p> Same tiling schema as Raster png tiles.</p>
@@ -149,33 +149,43 @@
 					</section>
 					<section>
 						<h2> How does it work?</h2>
-
-						Mapbox Vector Tile Standard. 
+						<a href="https://www.mapbox.com/vector-tiles/specification/">Mapbox Vector Tile Standard. </a>
 						Based on the binary protocal buffer (.pbf) from Google. 
-
 						Standard already used by Esri.
 
 						github.com/mapbox/vector-tile-spec
 
-						GeoJSON
+						Web Mercator projection , Goolge tile scheme. 
+
+						GeoJSON	
 						mbtiles
 						.pbf
 						Data and Properties. 
 					</section>
 					
-					<section>
-						<h2>How to get them?</h2>
-						free serving
-						making them (TippeCanoe)
-						Amsterdam Datalab.
+					<section data-background="http://erictheise.com/geostack-deck/images/Map-nik-cake-osm-7.png">
+						<h2>Where to get them?</h2>
+						Host free serving
+						
+						osm map
+						Mapbox 
+						Mapzen
+						MapQuest
+						 
+						NL Amsterdam Datalab.
 						Soon PDOK/Kadaster?...BRT of the Netherlands! 
+
+						making them your self 
+						(Tegola TippeCanoe GeoServer)
+						
 					</section>
 					<section>
 						<h2>How to visualize them?</h2>	
 						OpenLayers
 						Leaflet
 						MapboxGL
-						Google
+						Google Maps API 
+						D3
 					</section>
 				</section>
 				<section>
