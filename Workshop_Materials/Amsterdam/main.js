@@ -2786,7 +2786,6 @@ var style_object = {
 }
 
 //Initialize Map
-
 var map = new mapboxgl.Map({
     container: "map",
     hash: true,
