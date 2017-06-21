@@ -3,21 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 		<title>Maptime #15</title>
-
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/simple.css">
-
+		<link rel="stylesheet" href="css/theme/white.css">
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background="img/maptimeAMS.png" data-background-size='60%'> 
+				<section data-state='openingslide' data-background="img/maptimeAMS.png" data-background-size='60%'> 
 				</section>
 				<section data-state='openingslide' data-background="https://www.mapbox.com/help/img/screenshots/dynamic-ny-details.gif">
 					<h1>Maptime Amsterdam #15</h1>
@@ -25,47 +20,62 @@
 					<h2>By Niene Boeijen</h2>
 				</section>
 				<section>
-					<h2>WIFI: WaagGuest</h2>
-					<h2>PW: guest@waag </h2>
-				</section>
-				<section> 
-					<p>This presentation</p>
-					<a href="https://maptime-ams.github.io/vector-tiles-workshop/#/">https://maptime-ams.github.io/vector-tiles-workshop/</a>
-					<p>The workshop:</p>
-					<a href="https://github.com/maptime-ams/vector-tiles-workshop/wiki">https://github.com/maptime-ams/vector-tiles-workshop/wiki</a>
-					<p>The materials needed:</p> 
-					<a href="https://github.com/maptime-ams/vector-tiles-workshop">https://github.com/maptime-ams/vector-tiles-workshop</a>
+					<h1>About me </h1>
+					<img src="https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/webmapper_logo_tekst.png" width="300px">
+					<p>Web Cartographer & Geo ICT developer</p>
+					<img src="img/WS_logo.jpg" width="300px">
+					<p> Internship, Hosting Maptime</p>
 				</section>
 				<section>
-					<h3>Short outline: </h3>
-					<ol>
-						<li><h2>Presentation. </h2></li>
-						<li><h2>Workshop! </h2></li>
-					    <li><h2>Show and tell! </h2></li>
-					</ol>
+					<section>
+						<h1>This evening! </h1>
+						<h2><ol>
+							<li>Presentation.</li>
+							<li>Workshop. </li>
+						    <li>Show and tell. </li>
+						</ol>
+						</h2>
+						<p> Maptime is BYOB!</p>
+					</section>
+					<section>
+						<h2>WIFI:</h2>  
+						<p>WaagGuest</p>
+						<h2>PW:</h2>
+						<p>guest@waag</p>
+					</section>
+					<section> 
+						<p>This presentation</p>
+						<a href="https://maptime-ams.github.io/vector-tiles-workshop/#/">https://maptime-ams.github.io/vector-tiles-workshop/</a>
+						<p>The workshop:</p>
+						<a href="https://github.com/maptime-ams/vector-tiles-workshop/wiki">https://github.com/maptime-ams/vector-tiles-workshop/wiki</a>
+						<p>The materials needed:</p> 
+						<a href="https://github.com/maptime-ams/vector-tiles-workshop">https://github.com/maptime-ams/vector-tiles-workshop</a>
+					</section>
 				</section>
 				<section>
 					<h1>Vector tiles!</h1>
-					<h3>Let's start from the beginning</h3>
+					<p>Let's start from the beginning</p>
 					<ul>
 						<li>What is a Web map?</li>
 						<li>Raster vs Vector</li>
 						<li>Vector tiles and what they look like</li>
+						<ul>
+							<li>Standards</li>
+							<li>Downloading</li>
+							<li>Making yourself</li>
+							<li>Hosting</li>
+							<li>Visualizing</li>
+						</ul>
 					</ul>
 				</section>
 				<section >
 					<section>
-					<h2> What is a web map?</h2>
-
-					<p> Analogue paper maps vs Digital maps </p>
-
-					<p> Digital maps vs Web Maps</p>
-
-					<p>Data, tiles, styles and servers. </p>
-					
-					<p> View in a browser, scroll, pan, zoom. </p>
-
-					<p> Examples:</p>
+						<h1> What is a web map?</h1>
+						<p>Analogue paper maps vs Digital maps </p>
+						<p>Digital maps vs Web Maps</p>
+						<p>Data, tiles, styles and servers. </p>
+						<p>View in a browser, scroll, pan, zoom. </p>
+						<p>Examples:</p>
 					</section>
 					<section data-background="img/osm.png">
 						<h2>openstreetmap.org</h2>
@@ -74,134 +84,158 @@
 						<h2>google.com/maps</h2>
 					</section>
 					<section>
-						<h2>a little History</h2>
+						<h1>a little History</h1>
+						<div style="float:left; width:50%"> 
+						<p>Digital maps</p>
 						<p>GIS software</p>
 						<p>GIS on the Web is not user friendly.. </p>
-						<p> 1996 Mapquest first with a web service! </p>
+						<p>1996 Mapquest first with a web service! </p></div>
+						<img src="https://s.aolcdn.com/hss/storage/midas/b9b34e399643c72a62fe437ab37b7ed0/203335059/500004990-03-01.jpeg" style="float:right; width:50%">
 					</section>
 					<section>
 						<p>But really slow to load..</p>
-						<p> 2004 Endoxon: <a href="http://map.search.ch">map.search.ch</a></p>
-						<p> 2005 Google Maps found a way for quick online mapping! </p>
-						<h2> Tiles! </h2>
+						<p>2004 Endoxon found a way for quick online mapping! <a href="http://map.search.ch">map.search.ch</a></p>
+						<p>2005 Google Maps took over!</p>
+						<p> The solution?</p>
+						<h1 class="fragment grow">Tiles! </h1>
 					</section>
 					<section data-background="http://maptime.io/anatomy-of-a-web-map/images/tiles-loading.gif">
-					<h2>Tiles</h2>
-					<p> All tiles 256x256 pixels </p>
-					<p> same grid, same boundaries </p>
-					<h2> All these little tiles load way faster than one big map!</h2>
-					<p> we call those slippy maps</p>
+						<h1>Tiles</h1>
+						<p>All tiles 256x256 pixels </p>
+						<p>Same grid, same boundaries </p>
+						<p class="fragment grow">All these little tiles load way faster than one big map!</p>
+						<p> Seamless and fast</p>
+						<p>We call those slippy maps</p>
 					</section>
-					<section data-background="http://www.truenorthgeospatial.com/wp-content/uploads/2015/10/training-tiling.png" data-background-size='60%' >
-						<h2>Zoom levels</h2>
-					<p>Each zoom level has its own set of tiles!</p>
-					<p>Zoom level 0: 1 tile for the whole world.</p>
-					<p>Increases exponentially...</p>
-					<p>Zoom level 1: 4 tiles</p>
-					<p>Zoom level 2: 16 tiles</p>
-					etc.
-					How does this look like : http://www.maptiler.org/google-maps-coordinates-tile-bounds-projection/
-					</section>
-					<section>
-						<h2>Serving tiles</h2>
-					<p>Tiles rendered in advance. </p>
-					<p>Stored in a cache. </p>
-					<p>Tiles are just images. </p>
+					<section >
+						<h1>Zoom levels</h1>
+						<p>Each zoom level has its own set of tiles!</p>
+						<div style="float:right; width:50%"> 
+							<p>Zoom level 0: 1 tile for the whole world.</p>
+							<p>Increases exponentially...</p>
+							<p>Zoom level 1: 4 tiles</p>
+							<p>Zoom level 2: 16 tiles</p>
+							<p> etc. </p>
+						</div>
+						<img src="http://www.truenorthgeospatial.com/wp-content/uploads/2015/10/training-tiling.png" style="float:left; width:50%">
+						<a href="http://www.maptiler.org/google-maps-coordinates-tile-bounds-projection/"> Map with tile bounds</a>
 					</section>
 					<section>
+						<h1>Serving tiles</h1>
+						<p>Tiles rendered in advance. </p>
+						<p>Stored in a cache. </p>
 						<p>Tiles are just images on the web</p>
-						<p>http://tile.openstreetmap.org/5/16/10.png</p>
-						<p>z/x/y</p>
+						<a href="http://tile.openstreetmap.org/5/16/10.png">http://tile.openstreetmap.org/5/16/10.png</a>
+						<a href="http://tile.openstreetmap.org/17/67320/43073.png">http://tile.openstreetmap.org/17/67320/43073.png</a>
+						<code data-trim data-noescape>{z/x/y}</code>
+					</section>
+					<section data-background="http://maptime.io/anatomy-of-a-web-map/images/anatomy-of-a-web-map.png" data-background-size='60%'>
+					<a href="https://www.mapbox.com/help/how-web-maps-work/">More info!</a>
 					</section>
 				</section>
 				<section>
-				<h6>Raster vs Vector</h6>
-					<section data-background="http://maptime.io/anatomy-of-a-web-map/images/anatomy-of-a-web-map.png" data-background-size='50%'></section>
+					<section>
+						<h1>From Raster to Vector</h1>
+					</section>
 					<section data-background="http://mapschool.io/img/raster.png" data-background-size='60%'> </section>
 					<section data-background="http://mapschool.io/img/vector_types.png" data-background-size='60%'></section>
 					<section data-background="http://www.emu-analytics.com/perch/resources/map-tiles-2-w800.png" data-background-size='60%'></section>
 					<section>
-						<h2>Advantages</h2>
+						<h1>Advantages Vector tiles</h1>
 						<p> Rendering is done on client side not by the server!</p>
-						<p> So different applications can style a map different!</p>
+						<p> So different clients can style a map different!</p>
 						<p> Small tile size! So faster data transfer. </p>
 						<p> High resolution! </p>
 						<p> Access to feature information!</p>
-						</section>
+					</section>
 					<section>
-					<h2>Who What Where?</h2>
-					<ul>
-						<li>Google </li>
-						<li>Mapbox</li>
-						<li>OSM</li>
-						<li>Apple</li>
-					</ul>
+						<h2>Who What Where?</h2>
+						<ul>
+							<li>Google </li>
+							<li>Mapbox</li>
+							<li>OSM</li>
+							<li>Apple</li>
+						</ul>
 					</section>
 				</section>
 				<section>
-				<h6>Vector tiles and what they look like.</h6> 
-					<section data-background="https://mapzen.com/resources/projects/vector-tiles/square-of-math.gif" >
-						<p> No colors</p>
-						<p> Arrays in a 256 x 256 matrix</p>
-						<p> Same tiling schema as Raster png tiles.</p>
-						<p> Binary format</p>
-						<p> Simplifies geometries</p>
+					<section data-background="https://www.mapbox.com/help/img/classic/data-styles-source.gif" data-background-size='90%' >
+						<h1 style="color:#fff">Vector tiles and what they look like.</h1> 
+					</section>
+					<section data-background="https://mapzen.com/resources/projects/vector-tiles/square-of-math.gif" data-background-size='90%' >
+						<div class="fragment fade-in" 	style="background-color:rgba(255,255,255,0.8); float:right"> <p> No colors</p>
+							<p> Arrays in a 256 x 256 matrix</p>
+							<p> Same tiling schema as Raster png tiles.</p>
+							<p> Binary format</p>
+							<p> Simplifies geometries</p>
+						</div>
 					</section>
 					<section>
-						<h2> How does it work?</h2>
+						<h1>Standards</h1>
 						<a href="https://www.mapbox.com/vector-tiles/specification/">Mapbox Vector Tile Standard. </a>
-						Based on the binary protocal buffer (.pbf) from Google. 
-						Standard already used by Esri.
-
-						github.com/mapbox/vector-tile-spec
-
-						Web Mercator projection , Goolge tile scheme. 
-
-						GeoJSON	
-						mbtiles
-						.pbf
-						Data and Properties. 
-					</section>
-					
-					<section data-background="http://erictheise.com/geostack-deck/images/Map-nik-cake-osm-7.png">
-						<h2>Where to get them?</h2>
-						Host free serving
-						
-						osm map
-						Mapbox 
-						Mapzen
-						MapQuest
-						 
-						NL Amsterdam Datalab.
-						Soon PDOK/Kadaster?...BRT of the Netherlands! 
-
-						making them your self 
-						(Tegola TippeCanoe GeoServer)
-						
+						<p>Based on the binary protocal buffer (.pbf) from Google.</p>
+						<p>Standard already used by Esri.</p>
+						<p>Web Mercator projection, Goolge tile scheme.</p>
+						<h1>Formats</h1>
+						<p>.mvt - .pbf</p>
+						<p>.mbtiles</p>
 					</section>
 					<section>
-						<h2>How to visualize them?</h2>	
-						OpenLayers
-						Leaflet
-						MapboxGL
-						Google Maps API 
-						D3
+						<h1>Where to get them?</h1>
+						<h3>Download</h3>
+						<p>osm2vectortiles</p>
+						<p>Mabox</p>
+						<p>Mapzen</p>
+						<p>Mapquest</p>
+					</section>
+					<section data-background="http://erictheise.com/geostack-deck/images/Map-nik-cake-osm-7.png">
+						<h1>Bake them your self</h1>
+						<div style="background-color:rgba(255,255,255,0.8)">
+							<p>Tegola</p>
+							<p>TippeCanoe</p>
+							<p>GeoServer</p> 
+							<p>T-rex</p>
+						</div>
+					</section>
+					<section data-background="img/amsterdam.png">
+						<h3>Hosting</h3>
+						<p>  Use locally offline or Host yourself?</p>
+						<p> Geoserver</p>
+						<p> Tegola</p>
+						<p> Tile servers</p>
+						<h3> The Netherlands!</h3>
+						<p> NL Amsterdam Datalab.</p>
+						<p> Soon PDOK/Kadaster?...BRT of the Netherlands! </p>
+					</section>
+					<section>
+						<h1>How to visualize them?</h1>	
+						<p>OpenLayers</p>
+						<p>Leaflet</p>
+						<p>MapboxGL</p>
+						<p>Google Maps API </p>
+						<p>D3</p>
 					</section>
 				</section>
 				<section>
-					<h3> Let's get started!</h3>
-					<p>The workshop:</p>
-					<a href="https://github.com/maptime-ams/vector-tiles-workshop/wiki">https://github.com/maptime-ams/vector-tiles-workshop/wiki</a>
-					<p>The materials needed:</p> 
-					<a href="https://github.com/maptime-ams/vector-tiles-workshop">https://github.com/maptime-ams/vector-tiles-workshop</a>
+					<section>
+						<h1> Let's get started!</h1>
+					</section>
+					<section>
+						<h2>Datalab</h2>
+						<p> Providing vector tiles today!</p>
+						<img src="https://raw.githubusercontent.com/maptime-ams/vector-tiles-workshop/master/img/datalab.png">
+					</section>
+					<section>
+						<p>The workshop:</p>
+						<a href="https://github.com/maptime-ams/vector-tiles-workshop/wiki">https://github.com/maptime-ams/vector-tiles-workshop/wiki</a>
+						<p>The materials needed:</p> 
+						<a href="https://github.com/maptime-ams/vector-tiles-workshop">https://github.com/maptime-ams/vector-tiles-workshop</a>
+					</section>
 				</section>
-				
 			</div>
 		</div>
-
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
