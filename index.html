@@ -190,9 +190,14 @@
 						<h1>Where to get them?</h1>
 						<h3>Download</h3>
 						<p> <a href="http://osm2vectortiles.org/">osm2vectortiles</a></p>
-						<p>Mapbox</p>
+						<p><a href="https://openmaptiles.org/">https://openmaptiles.org/</a></p>
+						<p>Make with Mapbox Studio</p>
+						<h3>Hosted</h3>
 						<p>Mapzen</p>
-						<p>Mapquest</p>
+						<pre><code>https://tile.mapzen.com/mapzen/vector/v1/{layers}/{z}/{x}/{y}.{format}</code></pre>
+						<a href="https://openmaptiles.com/hosting/">https://openmaptiles.com/hosting/</a>
+						<p><a href="https://developer.mapquest.com/documentation/">Mapquest</a></p>
+						<p>Licences..</p>
 					</section>
 					<section data-background="http://erictheise.com/geostack-deck/images/Map-nik-cake-osm-7.png">
 						<h1>Bake them your self</h1>
@@ -201,35 +206,41 @@
 							<p><a href="https://github.com/mapbox/tippecanoe">TippeCanoe</a></p>
 							<p><a href="http://docs.geoserver.org/latest/en/user/extensions/vectortiles/tutorial.html">GeoServer </a></p> 
 							<p> <a href="https://github.com/pka/t-rex">T-rex</a></p>
+							<p><a href="https://github.com/mapbox/awesome-vector-tiles">More </a> command line tools</p>
 						</div>
 					</section>
 					<section data-background="img/amsterdam.png">
-						<h3>Hosting</h3>
-						<p><a href="https://openmaptiles.org/">https://openmaptiles.org/</a></p>
-						<p>  Use locally offline or Host yourself?</p>
+						<h3>Host yourself?</h3>
+						<p>Use locally offline</p>
 						<p><a href="http://docs.geoserver.org/latest/en/user/extensions/vectortiles/tutorial.html">GeoServer </a></p>
 						<p><a href="http://tegola.io/">Tegola </a></p>
 						<p> Tile servers</p>
 						<h3> The Netherlands!</h3>
 						<p> NL Amsterdam Datalab.</p>
+						<pre><code data-trim data-noescape>"https://t1.data.amsterdam.nl/wm/{z}/{x}/{y}.pbf"</code></pre>
 						<p> Soon PDOK/Kadaster?...BRT of the Netherlands! </p>
 					</section>
 					<section>
 						<h1>How to visualize them?</h1>	
-						<p><a href="https://openlayers.org/en/latest/examples/osm-vector-tiles.html">OpenLayers</a></p>
-						<p><a href="http://leafletjs.com/plugins.html#vector-tiles">Leaflet</a></p>
+						<p><a href="https://openlayers.org/en/latest/examples/osm-vector-tiles.html">OpenLayers</a> -- <a href="http://leafletjs.com/plugins.html#vector-tiles">Leaflet</a></p>
 						<p><a href="https://www.mapbox.com/mapbox-gl-js/api/">MapboxGL</a></p>
-						<p>Google Maps API </p>
 						<p><a href="https://d3js.org/">D3.js</a></p>
 						<p><a href="http://maputnik.com/">Maputnik</a></p>
 						<p>Mapbox studio</p>
+						<p>JavaScript</p>
 					</section>
+
 					<section> 
 						<h1> Cool stuff!</h1>
 						<p><a href="https://www.mapbox.com/gallery/#map-7">Beautiful visualizations!</a></p>
 						<p><a href="https://parallel.co.uk/os-openmap-cyo/#12.47/54.3741/-2.916">Colouring on the fly!</a></p>
 						<p><a href="http://webmapper.net/#14.44/52.3715/4.9028/-11.2/60">Web GL for 3D extrusion!</a></p>
 						<p><a href="file:///home/niene/Documents/00_Projecten/2017_02_Kadaster_Vector_Tiles/brtviz/openlayers/index.html">JavaScript interactivity</a></p>
+					</section>
+					<section>
+						<h1> More info? </h1>
+						<p><a href="https://github.com/maptime-ams/vector-tiles-workshop/wiki/Interesting-links">List with links!</a></p>
+						<p>Feel free to contact me!</p>
 					</section>
 				</section>
 				<section>
@@ -240,6 +251,20 @@
 						<h2>Datalab</h2>
 						<p> Providing vector tiles today!</p>
 						<img src="https://raw.githubusercontent.com/maptime-ams/vector-tiles-workshop/master/img/datalab.png">
+					</section>
+					<section>
+						<p>Full code example on Github!</p>
+	<pre><code data-trim data-noescape>
+//Initialize Map
+var map = new mapboxgl.Map({
+    container: "map",
+    hash: true,
+    style: style_object,
+    zoom: 11,
+    pitch: 60,
+    bearing: 62.4,
+    center: [ 4.8, 52.4]
+});	</code></pre>
 					</section>
 					<section>
 						<p>The workshop:</p>
