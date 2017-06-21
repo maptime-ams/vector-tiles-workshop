@@ -1,8 +1,8 @@
 # Vector Tiles Workshop
 
-We will start with a [presentation](maptime-ams.github.com/vector-tiles-workshop)
+We will start with a [presentation](https://maptime-ams.github.io/vector-tiles-workshop/)
 
-In the [workshop](github.com/maptime-ams/vector-tiles-workshop/wiki) we will give you:
+In the [workshop](https://github.com/maptime-ams/vector-tiles-workshop/wiki) we will give you:
 
 - a full code example of how to make a map with the Mapbox GL js library
 - a endpoint where to find your tiles 
