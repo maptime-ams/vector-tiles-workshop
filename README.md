@@ -1,6 +1,7 @@
 # Vector Tiles Workshop
 
-In this workshop we will give you:
+The [presentation](maptime-ams.github.com/vector-tiles-workshop)
+In this [workshop](github.com/maptime-ams/vector-tiles-workshop/wiki) we will give you:
 
 - a full code example of how to make a map with the Mapbox GL js library
 - a endpoint where to find your tiles 
@@ -48,18 +49,3 @@ A really short outline:
 2. Open the index.html
 3. See your map!
 4. Style your map!
-
-## Maputnik
-Maputnik is a free visual style editor for maps targeted at developers and designers. It allows you to pull in data sources and style the vector features with the visual editor to build your own custom map design! 
-
-1. Goto http://maputnik.com/editor/
-2. Style your map!
-
-## Optional
-
-1. Get TippeCanoe.
-2. Convert your own geoJSON data to vector tiles.
-3. Set up local server.
-4. Style you own map!  
-
-
