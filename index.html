@@ -57,7 +57,7 @@
 					<p>Let's start from the beginning</p>
 					<ul>
 						<li>What is a Web map?</li>
-						<li>Raster vs Vector</li>
+						<li>From Raster to Vector</li>
 						<li>Vector tiles and what they look like</li>
 						<ul>
 							<li>Standards</li>
@@ -70,18 +70,19 @@
 				</section>
 				<section >
 					<section>
-						<h1> What is a web map?</h1>
-						<p>Analogue paper maps vs Digital maps </p>
-						<p>Digital maps vs Web Maps</p>
+						<h1>What is a web map?</h1>
+						<p>Analogue paper ]</p>
+						<p>Digital maps</p>
+						<p>Web Maps</p>
 						<p>Data, tiles, styles and servers. </p>
 						<p>View in a browser, scroll, pan, zoom. </p>
 						<p>Examples:</p>
 					</section>
 					<section data-background="img/osm.png">
-						<h2>openstreetmap.org</h2>
+						<h2><a href="openstreetmap.org">openstreetmap.org</a></h2>
 					</section>
 					<section data-background="img/google.png">
-						<h2>google.com/maps</h2>
+						<h2><a href="google.com/maps">google.com/maps</a></h2>
 					</section>
 					<section>
 						<h1>a little History</h1>
@@ -129,8 +130,9 @@
 						<a href="http://tile.openstreetmap.org/17/67320/43073.png">http://tile.openstreetmap.org/17/67320/43073.png</a>
 						<code data-trim data-noescape>{z/x/y}</code>
 					</section>
-					<section data-background="http://maptime.io/anatomy-of-a-web-map/images/anatomy-of-a-web-map.png" data-background-size='60%'>
-					<a href="https://www.mapbox.com/help/how-web-maps-work/">More info!</a>
+					<section >
+					<img src="http://maptime.io/anatomy-of-a-web-map/images/anatomy-of-a-web-map.png">
+					<a href="https://www.mapbox.com/help/how-web-maps-work/" style="float:right;">More info!</a>
 					</section>
 				</section>
 				<section>
@@ -151,10 +153,10 @@
 					<section>
 						<h2>Who What Where?</h2>
 						<ul>
-							<li>Google </li>
-							<li>Mapbox</li>
-							<li>OSM</li>
-							<li>Apple</li>
+							<li><a href="http://googlemobile.blogspot.nl/2010/12/under-hood-of-google-maps-50-for.html"></a>Google </li>
+							<li><a href="https://www.mapbox.com/maps/">Mapbox </a></li>
+							<li><a href="http://osm2vectortiles.org/">OSM</a></li>
+							<li><a href="https://www.apple.com/ios/maps/">Apple</a></li>
 						</ul>
 					</section>
 				</section>
@@ -163,7 +165,7 @@
 						<h1 style="color:#fff">Vector tiles and what they look like.</h1> 
 					</section>
 					<section data-background="https://mapzen.com/resources/projects/vector-tiles/square-of-math.gif" data-background-size='90%' >
-						<div class="fragment fade-in" 	style="background-color:rgba(255,255,255,0.8); float:right"> <p> No colors</p>
+						<div class="fragment fade-in" 	style="background-color:rgba(255,255,255,0.8); float:right"> <p> No colours</p>
 							<p> Arrays in a 256 x 256 matrix</p>
 							<p> Same tiling schema as Raster png tiles.</p>
 							<p> Binary format</p>
@@ -174,7 +176,7 @@
 						<h1>Standards</h1>
 						<a href="https://www.mapbox.com/vector-tiles/specification/">Mapbox Vector Tile Standard. </a>
 						<p>Based on the binary protocal buffer (.pbf) from Google.</p>
-						<p>Standard already used by Esri.</p>
+						<p><a href="https://www.mapbox.com/blog/vector-tile-adoption/">Standard already used by Esri.</a></p>
 						<p>Web Mercator projection, Goolge tile scheme.</p>
 						<h1>Formats</h1>
 						<p>.mvt - .pbf</p>
@@ -183,7 +185,7 @@
 					<section>
 						<h1>Where to get them?</h1>
 						<h3>Download</h3>
-						<p>osm2vectortiles</p>
+						<p> <a href="http://osm2vectortiles.org/">osm2vectortiles</a></p>
 						<p>Mabox</p>
 						<p>Mapzen</p>
 						<p>Mapquest</p>
@@ -191,17 +193,18 @@
 					<section data-background="http://erictheise.com/geostack-deck/images/Map-nik-cake-osm-7.png">
 						<h1>Bake them your self</h1>
 						<div style="background-color:rgba(255,255,255,0.8)">
-							<p>Tegola</p>
-							<p>TippeCanoe</p>
-							<p>GeoServer</p> 
-							<p>T-rex</p>
+							<p><a href="http://tegola.io/">Tegola </a></p>
+							<p><a href="https://github.com/mapbox/tippecanoe">TippeCanoe</a></p>
+							<p><a href="http://docs.geoserver.org/latest/en/user/extensions/vectortiles/tutorial.html">GeoServer </a></p> 
+							<p> <a href="https://github.com/pka/t-rex">T-rex</a></p>
 						</div>
 					</section>
 					<section data-background="img/amsterdam.png">
 						<h3>Hosting</h3>
+						<p><a href="https://openmaptiles.org/">https://openmaptiles.org/</a></p>
 						<p>  Use locally offline or Host yourself?</p>
-						<p> Geoserver</p>
-						<p> Tegola</p>
+						<p><a href="http://docs.geoserver.org/latest/en/user/extensions/vectortiles/tutorial.html">GeoServer </a></p>
+						<p><a href="http://tegola.io/">Tegola </a></p>
 						<p> Tile servers</p>
 						<h3> The Netherlands!</h3>
 						<p> NL Amsterdam Datalab.</p>
@@ -209,11 +212,20 @@
 					</section>
 					<section>
 						<h1>How to visualize them?</h1>	
-						<p>OpenLayers</p>
-						<p>Leaflet</p>
-						<p>MapboxGL</p>
+						<p><a href="https://openlayers.org/en/latest/examples/osm-vector-tiles.html">OpenLayers</a></p>
+						<p><a href="http://leafletjs.com/plugins.html#vector-tiles">Leaflet</a></p>
+						<p><a href="https://www.mapbox.com/mapbox-gl-js/api/
+">MapboxGL</a></p>
 						<p>Google Maps API </p>
-						<p>D3</p>
+						<p><a href="https://d3js.org/">D3.js</a></p>
+						<p><a href="http://maputnik.com/">Maputnik</a></p>
+					</section>
+					<section> 
+						<h1> Cool stuff!</h1>
+						<p><a href="https://www.mapbox.com/gallery/#map-7">Beautiful visualizations!</a></p>
+						<p><a href="https://parallel.co.uk/os-openmap-cyo/#12.47/54.3741/-2.916">Colouring on the fly!</a></p>
+						<p><a href="http://webmapper.net/#14.44/52.3715/4.9028/-11.2/60">Web GL for 3D extrusion!</a></p>
+						<p><a href="file:///home/niene/Documents/00_Projecten/2017_02_Kadaster_Vector_Tiles/brtviz/openlayers/index.html">JavaScript interactivity</a></p>
 					</section>
 				</section>
 				<section>
