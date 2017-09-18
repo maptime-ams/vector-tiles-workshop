@@ -4,7 +4,7 @@ var style_object = {
 	"sources": {
 		"openmaptiles": {
 			"type": "vector",
-			"url": "https://free.tilehosting.com/data/v3.json?key={yourKey}"
+			"url": "https://free.tilehosting.com/data/v3.json?key=xujVUrQDmYaXkigsoQ0y"
 		} 
 	},
 	"layers": [
